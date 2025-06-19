@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
 
     // Replace with your Google Apps Script deployment URL
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx67Zb6JCnXcwp0nrdGkPcbd0FHPD8xLPOliS1lIS9ODFiKipHIQ3Sq-zJCNCJqDG-aMw/exec';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxVz9WxKx16dxWwhCmCihpGNS754htgEmUt14e1M7wWjoYoDW98Ud1K9-hBeBQGiAYC9w/exec';
     
 
     // Contact form elements
