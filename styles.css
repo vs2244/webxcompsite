@@ -82,57 +82,6 @@ body {
     margin-bottom: 2rem;
 }
 
-.schedule-meeting-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.schedule-meeting-btn i {
-    font-size: 18px;
-}
-
-.schedule-meeting-btn:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.schedule-meeting-btn:active {
-    transform: translateY(0);
-}
-
-.schedule-meeting-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0,123,255,0.3);
-}
-
-.cta-button {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    background: var(--primary-color);
-    color: var(--white);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-    background: var(--secondary-color);
-}
-
-
 /* Footer Styles */
 footer {
     background: var(--text-color);
@@ -173,91 +122,6 @@ footer {
     font-size: 1.5rem;
     color: var(--primary-color);
     font-weight: 500;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 100px;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-image {
-        margin-top: 2rem;
-    }
-    
-    .hero-image img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-   .contact-content {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-info {
-        order: 2;
-    }
-
-    .contact-form {
-        order: 1;
-    }
-}
-
-/* styles.css */
-.contact {
-    padding: 5rem 5%;
-    background-color: var(--light-bg);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.contact h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-}
-
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
-}
-
-.contact-info {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-}
-
-.info-item i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-right: 1rem;
 }
 
 /* styles.css */
@@ -368,13 +232,14 @@ footer {
     color: #991b1b;
 }
 
-/* Services Section */
 .services-grid {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 
 .flip-card {
     background-color: transparent;
@@ -439,17 +304,79 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+   .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        order: 2;
+    }
+
+    .contact-form {
+        order: 1;
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
     }
 
-    .flip-card {
-        width: 250px;
-        height: 175px;
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 15px;
     }
-    
+
+    .flip-card {
+        height: 180px;
+    }
+
     .flip-card-front i {
         font-size: 2.5em;
+    }
+
+    .flip-card-front h3 {
+        font-size: 1.1em;
+    }
+
+    .flip-card-back p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
     }
 }
